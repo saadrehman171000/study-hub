@@ -110,7 +110,7 @@ export const config = {
   },
   jwt: {
     secret: process.env.JWT_SECRET || 'studyhub_secret_key_for_jwt_tokens',
-    expiresIn: '7d',
+    expiresIn: 604800, // 7 days in seconds
   },
   gemini: {
     apiKey: process.env.GEMINI_API_KEY || 'AIzaSyBF6XjAsoc_PXJVMImTLjqba03ZM8tOd00',
