@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: study-hub
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: VITE_API_URL
+        value: https://study-hub.onrender.com/api
+      - key: VITE_CLERK_PUBLISHABLE_KEY
+        value: pk_test_Y2xvc2luZy1oeWVuYS02Mi5jbGVyay5hY2NvdW50cy5kZXYk
+    healthCheckPath: /api/health
+    autoDeploy: true 

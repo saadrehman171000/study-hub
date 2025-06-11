@@ -1,0 +1,41 @@
+%APPDATA%
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node and build directories
+node_modules
+dist
+dist-ssr
+*.local
+.bolt
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# OS-specific files
+.DS_Store
+
+# Windows-specific files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables file
+.env
+backend/node_modules/
+backend/dist/
+backend/build/
+backend/*.tsbuildinfo
+backend/uploads/
+backend/prisma/dev.db
+backend/prisma/dev.db-journal
