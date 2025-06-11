@@ -3,7 +3,6 @@ import jwt, { Secret, SignOptions } from 'jsonwebtoken';
 import { prisma } from '../index';
 import { sendSuccess, sendError } from '../utils/responseHandler';
 import { config } from '../config';
-import type { StringValue } from 'ms';
 
 // Register or authenticate user via Clerk
 export const syncUser = async (req: Request, res: Response) => {
