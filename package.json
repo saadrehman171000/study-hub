@@ -7,7 +7,7 @@
     "dev": "vite",
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:backend\"",
     "dev:backend": "cd backend && npm run dev",
-    "build": "cross-env VITE_API_URL=https://study-hub-qez6.onrender.com/api VITE_CLERK_PUBLISHABLE_KEY=pk_test_Y2xvc2luZy1oeWVuYS02Mi5jbGVyay5hY2NvdW50cy5kZXYk ./node_modules/.bin/vite build && cd backend && npm run build",
+    "build": "echo \"VITE_API_URL=https://study-hub-qez6.onrender.com/api\nVITE_CLERK_PUBLISHABLE_KEY=pk_test_Y2xvc2luZy1oeWVuYS02Mi5jbGVyay5hY2NvdW50cy5kZXYk\" > .env && ./node_modules/.bin/vite build && cd backend && npm run build",
     "start": "cd backend && npm start",
     "lint": "eslint .",
     "preview": "vite preview"
