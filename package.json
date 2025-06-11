@@ -9,7 +9,6 @@
     "dev:backend": "cd backend && npm run dev",
     "build": "./node_modules/.bin/vite build && cd backend && npm run build",
     "start": "cd backend && npm start",
-    "postinstall": "cd backend && npm install",
     "lint": "eslint .",
     "preview": "vite preview"
   },
