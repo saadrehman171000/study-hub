@@ -15,4 +15,4 @@ services:
       - key: VITE_CLERK_PUBLISHABLE_KEY
         value: pk_test_Y2xvc2luZy1oeWVuYS02Mi5jbGVyay5hY2NvdW50cy5d
     healthCheckPath: /api/health
-    autoDeploy: true 
+    autoDeploy: true
