@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import jwt from 'jsonwebtoken';
+import jwt, { Secret, SignOptions } from 'jsonwebtoken';
 import { prisma } from '../index';
 import { sendSuccess, sendError } from '../utils/responseHandler';
 import { config } from '../config';
@@ -49,14 +49,15 @@ export const syncUser = async (req: Request, res: Response) => {
     }
 
     // Generate JWT token using config
+    const signOptions: SignOptions = { expiresIn: config.jwt.expiresIn };
     const token = jwt.sign(
       {
         id: user.id,
         clerkId: user.clerkId,
         email: user.email,
       },
-      config.jwt.secret,
-      { expiresIn: config.jwt.expiresIn }
+      config.jwt.secret as Secret,
+      signOptions
     );
 
     return sendSuccess(

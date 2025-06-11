@@ -34,7 +34,7 @@
       // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
       "outDir": "./dist",                                 /* Specify an output folder for all emitted files. */
       "typeRoots": ["./node_modules/@types", "../node_modules/@types", "../../node_modules/@types"],
-      "types": ["node"]
+      "types": ["node"],
       // "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
       // "moduleSuffixes": [],                             /* List of file name suffixes to search when resolving a module. */
       // "allowImportingTsExtensions": true,               /* Allow imports to include TypeScript file extensions. Requires '--moduleResolution bundler' and either '--noEmit' or '--emitDeclarationOnly' to be set. */
