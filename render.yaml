@@ -2,6 +2,7 @@ services:
   - type: web
     name: study-hub
     env: node
+    nodeVersion: 20.x
     buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
@@ -10,8 +11,8 @@ services:
       - key: DATABASE_URL
         sync: false
       - key: VITE_API_URL
-        value: https://study-hub.onrender.com/api
+        value: https://study-hub-qez6.onrender.com/api
       - key: VITE_CLERK_PUBLISHABLE_KEY
-        value: pk_test_Y2xvc2luZy1oeWVuYS02Mi5jbGVyay5hY2NvdW50cy5kZXYk
+        value: pk_test_Y2xvc2luZy1oeWVuYS02Mi5jbGVyay5hY2NvdW50cy5d
     healthCheckPath: /api/health
     autoDeploy: true 
