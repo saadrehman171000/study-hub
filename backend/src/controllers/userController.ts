@@ -33,7 +33,7 @@ export const syncUser = async (req: Request, res: Response) => {
           email,
           firstName: firstName || user.firstName,
           lastName: lastName || user.lastName,
-          profilePicture: profilePicture || user.profilePicture,
+          profilePicture: user.profilePicture,
         },
       });
     } else {
